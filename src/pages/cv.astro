@@ -1,0 +1,72 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Educacion</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Secundario"
+      subtitle=""
+    />
+    <TimeLineElement
+      title="Autodidacta"
+      subtitle=""
+    />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experienza</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+
+    <TimeLineElement
+      title="Reparto"
+      subtitle="De [2020] a [2024] en [Rappi]"
+    >
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="Logistica"
+      subtitle="De [2019] a [2020] en [Treggo]"
+    >
+          </TimeLineElement>
+    <TimeLineElement
+      title="Manufactura"
+      subtitle="De [2017] a [2018] en [Teiko SRL]"
+    >
+          </TimeLineElement>
+    <TimeLineElement
+      title="Cadete"
+      subtitle="De [2015] to [2016] en [Revista Obra]"
+    >
+         </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Certificaciones</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2 text-cyan-500">
+    <li>
+      <a href="https://www.efset.org/cert/Pie4pv" target="_blank">Ingles</a>
+    </li>
+
+  </ul>
+
+ <!-- <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Habilidades</div>
+  </div>
+
+ <ul class="list-disc md:columns-5 columns-2 mx-6"> 
+    <li>Habilidad</li>
+  </ul>
+  -->
+</BaseLayout>
