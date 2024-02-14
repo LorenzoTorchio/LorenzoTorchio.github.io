@@ -24,6 +24,12 @@ jobs:
         uses: withastro/action@v1
       - name: Setup pnpm
         uses: pnpm/action-setup@v3.0.0
+        with:
+          pnpm-version: 8.15.2
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.18.1
             
         # con:
           # path: . # La ubicación raíz de tu proyecto de Astro dentro del repositorio. (opcional)
